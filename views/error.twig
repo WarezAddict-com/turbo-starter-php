@@ -1,0 +1,44 @@
+{# Errors #}
+
+{% extends "templates/app.twig" %}
+
+{% block title %}ERROR!{% endblock %}
+
+{% block content %}
+
+    <div class="container" id="error">
+        <div class="row w-100 p-0 m-auto justify-content-center">
+            <div class="col-12 text-center">
+
+                {% if status %}
+                    <p class="h1 font-weight-bold">{{ status }}</p>
+                {% else %}
+                    <p class="h1 font-weight-bold">Error!</p>
+                    <p><a href="{{ BaseUrl }}">Go back</a> and try again...</p>
+                {% endif %}
+
+                {% if message %}
+                    <p class="h4">Code: {{ code }}</p>
+                {% endif %}
+
+                {% if message %}
+                    <p>Message: {{ message }}</p>
+                {% endif %}
+
+                {% if file %}
+                    <p>File: {{ file }}</p>
+                {% endif %}
+
+                {% if line %}
+                    <p>Line: {{ line }}</p>
+                {% endif %}
+
+                {% if trace %}
+                    <p>Trace: {{ trace }}</p>
+                {% endif %}
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

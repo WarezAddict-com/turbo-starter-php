@@ -1,0 +1,220 @@
+/** Html Body **/
+html {
+  color: #000000;
+  scroll-behavior: smooth !important;
+  width: 100% !important;
+  margin: 0px auto !important;
+  padding: 0px !important;
+}
+
+body {
+  width: 100% !important;
+  margin: 0px auto !important;
+  padding: 0px !important;
+  color: #000000;
+  scroll-behavior: smooth !important;
+  background: rgba(255, 255, 255, 0) !important;
+}
+
+/** Links **/
+a,
+a:visited,
+a:active {
+  border: 0px !important;
+  text-decoration: none !important;
+  outline: none !important;
+  color: #007bff !important;
+  opacity: 1 !important;
+}
+
+a:hover {
+  color: #007bff !important;
+  border: 0px !important;
+  outline: none !important;
+  text-decoration: none !important;
+  opacity: 1 !important;
+}
+
+/** Dark Background **/
+.bg-dark {
+  background: rgba(0, 0, 0, 1.0) !important;
+  color: #FFFFFF !important;
+}
+
+/** Top Navbar **/
+#topNav {
+  background: rgba(0, 0, 0, 1.0) !important;
+  color: #FFFFFF;
+  overflow: hidden !important;
+}
+
+a.navbar-brand {
+  text-decoration: none !important;
+  outline: none !important;
+  border: 0px !important;
+  color: #007bff !important;
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  margin: auto !important;
+  opacity: 1 !important;
+}
+
+a.navbar-brand:hover {
+  color: #007bff !important;
+}
+
+a.nav-link {
+  text-decoration: none !important;
+  outline: none !important;
+  border: 0px !important;
+  color: #FFFFFF !important;
+  opacity: 1 !important;
+  font-weight: 700 !important;
+}
+
+a.nav-link:hover,
+a.nav-link.active {
+  text-decoration: none !important;
+  outline: none !important;
+  border: 0px !important;
+  color: #007bff !important;
+  opacity: 1 !important;
+  font-weight: 700 !important;
+}
+
+p.navbar-text {
+  color: #FFFFFF !important;
+  margin: auto !important;
+  font-weight: 700 !important;
+}
+
+/** Main **/
+#main {
+  min-height: 375px !important;
+  margin: 100px auto 35px auto !important;
+  width: 100% !important;
+  line-height: 1.5rem !important;
+  padding: 0px !important;
+}
+
+/** Search Box **/
+#search {
+  width: 100% !important;
+  margin: 0px auto 35px auto !important;
+  padding: 50px !important;
+  border: 0px !important;
+  background: rgba(0, 0, 0, 1.0) !important;
+  color: #FFFFFF !important;
+}
+
+input,
+textarea {
+  border: 0px !important;
+  outline: none !important;
+}
+
+input:focus,
+textarea:focus {
+  border: 0px !important;
+  outline: none !important;
+}
+
+#sform {
+  border: 2px solid rgba(255, 255, 255, 1) !important;
+}
+
+#submit {
+  color: #FFFFFF !important;
+  font-weight: 700 !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+}
+
+/** Flash Messages **/
+#flash {
+  width: 100% !important;
+  margin: 0px auto 25px auto !important;
+}
+
+/** Home **/
+#home {
+  width: 100% !important;
+  margin: 0px auto !important;
+  padding: 0px !important;
+}
+
+/** Results **/
+#results {
+  width: 100% !important;
+  margin: 0px auto !important;
+}
+
+/** Login **/
+#login {
+  width: 100% !important;
+  padding: 0px !important;
+  margin: 0px auto !important;
+}
+
+/** Signup **/
+#signup {
+  width: 100% !important;
+  padding: 0px !important;
+  margin: 0px auto !important;
+}
+
+/** Pagination **/
+#pagination {
+  width: 100% !important;
+  padding: 0px !important;
+  margin: 40px auto 0px auto !important;
+}
+
+nav#pager {
+  width: 100% !important;
+  padding: 0px !important;
+  margin: 25px auto 0px auto !important;
+  border: 0px !important;
+}
+
+nav#pager .page-item {
+  border: 0px !important;
+  outline: none !important;
+  text-decoration: none !important;
+}
+
+/** Bottom Navbar **/
+#bottomNav {
+  background: rgba(0, 0, 0, 1.0) !important;
+  color: #FFFFFF !important;
+  width: 100% !important;
+}
+
+/** Scroll To Top **/
+a#scroll {
+  color: #FFFFFF !important;
+  border: 0px !important;
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+a#scroll:hover {
+  color: #007bff !important;
+}
+
+/** Debug **/
+#debug {
+  width: 100% !important;
+  background-color: #000000 !important;
+  color: #FF0000 !important;
+  border: 2px solid #FF0000 !important;
+  margin: 15px auto !important;
+}
+
+/** Media Query **/
+@media screen and (max-width: 800px) {
+
+  #blah {
+    display: none !important;
+  }
+
+}

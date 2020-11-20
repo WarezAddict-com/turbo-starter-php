@@ -1,0 +1,25 @@
+{# Search Box #}
+
+    <div class="container rounded shadow" id="search">
+
+        <div class="form-row justify-content-center">
+            <form class="col-12 input-group" action="/search" method="post">
+
+                <input class="form-control form-control-lg shadow" type="search" name="search" id="sform" placeholder="Search for a movie..." autocomplete="off">
+
+                {{ csrf }}
+
+                <div class="input-group-btn">
+                    <button class="btn btn-lg btn-primary font-weight-bold shadow" type="submit" id="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+
+                    {#
+                    <input class="btn btn-lg btn-primary font-weight-bold shadow" type="submit" name="submit" id="submit" value="Go!">
+                    #}
+                </div>
+
+            </form>
+        </div>
+
+    </div>

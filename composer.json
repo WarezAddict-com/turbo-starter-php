@@ -1,0 +1,46 @@
+{
+    "name": "warezaddict-com/turbo-starter-php",
+    "description": "Fast simple starter project for your next website",
+    "keywords": ["warezaddict", "turbo", "starter", "skeleton", "project"],
+    "homepage": "https://www.warezaddict.com",
+    "type": "project",
+    "license": "MIT",
+    "authors": [{
+        "name": "Turbo",
+        "email": "turbo@warezaddict.com"
+    }],
+    "require": {
+        "php": ">=7.2",
+        "kanellov/slim-twig-flash": "^0.2.0",
+        "monolog/monolog": "^1.24",
+        "php-tmdb/api": "^3.0",
+        "slim/csrf": "^0.8.3",
+        "slim/flash": "^0.4.0",
+        "slim/slim": "^3.12",
+        "slim/twig-view": "^2.5",
+        "twig/extensions": "^1.5",
+        "vectorface/whip": "^0.3.2",
+        "vlucas/phpdotenv": "^3.4"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^4.3",
+        "zeuxisoo/slim-whoops": "^0.6.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Turbo\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "process-timeout": 0,
+        "preferred-install": "dist",
+        "bin-dir": "bin",
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "scripts": {
+        "opti": "composer -o dumpautoload"
+    }
+}

@@ -1,0 +1,85 @@
+{# Pagination #}
+
+<nav aria-label="Pagination" id="pager">
+    <ul class="pagination justify-content-center">
+
+        {% if current_page == 1 %}
+
+            <li class="page-item disabled">
+                <a class="page-link" href="{{ baseUrl }}/#">
+                    <i class="far fa-2x fa-arrow-alt-circle-left"></i>
+                </a>
+            </li>
+
+        {% else %}
+
+            <li class="page-item">
+                <a class="page-link" href="{{ baseUrl }}/?page={{ current_page - 1 }}">
+                    <i class="far fa-2x fa-arrow-alt-circle-left"></i>
+                </a>
+            </li>
+
+        {% endif %}
+
+            <li class="page-item p-0 mx-3 my-auto justify-content-center">
+                <span class="font-weight-bold">Page {{ current_page }} of {{ total_pages }}</span>
+            </li>
+
+        {% if current_page < total_pages %}
+
+            <li class="page-item">
+                <a class="page-link" href="{{ baseUrl }}/?page={{ current_page + 1 }}">
+                    <i class="far fa-2x fa-arrow-alt-circle-right"></i>
+                </a>
+            </li>
+
+        {% else %}
+
+            <li class="page-item disabled">
+                <a class="page-link" href="{{ baseUrl }}/#">
+                    <i class="far fa-2x fa-arrow-alt-circle-right"></i>
+                </a>
+            </li>
+
+        {% endif %}
+
+    </ul>
+</nav>
+
+{# ####################################################################
+
+<nav aria-label="Pagination" id="pager">
+    <ul class="pagination justify-content-center">
+
+        <li class="page-item">
+            <a class="page-link" href="#">Prev</a>
+        </li>
+
+        <li class="page-item active">
+            <a class="page-link" href="#">1</a>
+        </li>
+
+        <li class="page-item">
+            <a class="page-link" href="#">2</a>
+        </li>
+
+        <li class="page-item">
+            <a class="page-link" href="#">3</a>
+        </li>
+
+        <li class="page-item">
+            <a class="page-link" href="#">4</a>
+        </li>
+
+        <li class="page-item">
+            <a class="page-link" href="#">5</a>
+        </li>
+
+        <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+        </li>
+
+    </ul>
+</nav>
+
+######################################################################### #}

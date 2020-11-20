@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Turbo-Starter-PHP - {% block title %}{% endblock %}</title>
+
+        <meta name="title" content="Turbo-Starter-PHP">
+        <meta name="description" content="Fast simple starter project">
+        <meta name="keywords" content="turbo, fast, starter, project, warezaddict">
+
+        <meta name="copyright" content="WarezAddict.com">
+        <meta name="author" content="Turbo">
+        <meta name="language" content="English">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-title" content="Turbo-Starter-PHP">
+        <meta name="application-name" content="Turbo-Starter-PHP">
+        <meta name="theme-color" content="#007bff">
+        <meta name="msapplication-tap-highlight" content="no">
+
+        <link rel="shortcut icon" href="{{ BaseUrl }}/favicon.ico">
+
+        <script src="{{ BaseUrl }}/js/jquery.min.js"></script>
+        <link rel="stylesheet" href="{{ BaseUrl }}/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ BaseUrl }}/css/custom.css">
+
+    </head>
+    <body>
+
+        {# Navbar #}
+        {% include "templates/partials/navbar.twig" %}
+
+        {# Main Wrap #}
+        <div class="container" id="main">
+
+            {# Search Box #}
+            {% include "templates/partials/search.twig" %}
+
+            {# Flash Messages #}
+            {% if flash() %}
+                {% include "templates/partials/flash.twig" %}
+            {% endif %}
+
+            {# Main Content #}
+            {% block content %}{% endblock %}
+
+            {# Debug Mode
+            {% if debugMode == 'yes' %}
+                <div class="container" id="debug">
+                    <div class="row">
+                        <div class="col-12 text-center w-100 m-auto">
+                            {{ dump() }}
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+            #}
+
+            {% if current_page %}
+                {% include "templates/partials/pagination.twig" %}
+            {% endif %}
+
+        {# /Main Wrap #}
+        </div>
+
+        {# Footer #}
+        {% include "templates/partials/footer.twig" %}
+
+        <script src="{{ BaseUrl }}/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="{{ BaseUrl }}/css/fontawesome.min.css">
+        <script src="{{ BaseUrl }}/js/custom.js"></script>
+
+    </body>
+</html>
